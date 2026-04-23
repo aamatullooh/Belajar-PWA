@@ -1,13 +1,13 @@
 {
   "id": "./",
-  "name": "PWA Template Responsif",
-  "short_name": "PWA Demo",
-  "description": "Aplikasi PWA responsif untuk demonstrasi template dasar Progressive Web App dengan dukungan offline dan installable.",
+  "name": "Aeterna | Digital Heritage Vault",
+  "short_name": "AETERNA",
+  "description": "Secure repository for digital legacy, legal documents, and future messages protected by the Heartbeat Protocol.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#4F46E5",
-  "theme_color": "#4F46E5",
+  "background_color": "#0f172a",
+  "theme_color": "#fbbf24",
   "orientation": "portrait",
   "lang": "id",
   "icons": [
@@ -17,27 +17,27 @@
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512x512-B.png",
+      "src": "icons/logo-512x512-S.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "icons/screenshot1.png",
+      "src": "icons/screenshotku1.png",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "icons/screenshot2.png",
+      "src": "icons/screenshotku2.png",
       "sizes": "1080x1920",
       "type": "image/png"
     }
   ],
   "shortcuts": [
     {
-      "name": "Buka Beranda",
-      "short_name": "Home",
+      "name": "Check-in Heartbeat",
+      "short_name": "Check-in",
       "url": "./index.html",
       "icons": [
         {
@@ -48,7 +48,8 @@
     }
   ],
   "categories": [
-    "productivity",
-    "utilities"
+    "lifestyle",
+    "utilities",
+    "security"
   ]
 }
