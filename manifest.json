@@ -1,5 +1,5 @@
 {
-  "id": "./",
+  "id": "aeterna-vault",
   "name": "Aeterna | Digital Heritage Vault",
   "short_name": "AETERNA",
   "description": "Secure repository for digital legacy, legal documents, and future messages protected by the Heartbeat Protocol.",
@@ -10,28 +10,35 @@
   "theme_color": "#fbbf24",
   "orientation": "portrait",
   "lang": "id",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icons/logo-192x192-S.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icons/logo-512x512-S.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
     {
       "src": "icons/screenshotku1.png",
       "sizes": "1080x1920",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Aeterna Dashboard"
     },
     {
       "src": "icons/screenshotku2.png",
       "sizes": "1080x1920",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vault View"
     }
   ],
   "shortcuts": [
