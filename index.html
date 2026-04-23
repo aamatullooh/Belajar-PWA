@@ -178,7 +178,16 @@
     </div>
 
     <script>
-        // DATA VAULT TERINTEGRASI
+        // --- 1. SERVICE WORKER REGISTRATION (PENERAPAN SOLUSI PWA) ---
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Aeterna Service Worker: Active'))
+                    .catch(err => console.log('Aeterna Service Worker: Failed', err));
+            });
+        }
+
+        // --- 2. DATA VAULT TERINTEGRASI (FUNGSI ASLI KAMU) ---
         const VAULT_DATA = {
             doc: { title: "LEGAL DOCUMENTS", content: `<div class="p-4 bg-slate-800 rounded-xl flex justify-between items-center"><div><p class="text-xs font-bold uppercase">Sertifikat_Aset.pdf</p></div><button class="text-blue-400 text-xs">VIEW</button></div>` },
             beneficiary: {
@@ -317,7 +326,6 @@
             const display = document.getElementById('check-in-timer');
             display.innerText = `${d}D:${String(h).padStart(2,'0')}H:${String(m).padStart(2,'0')}M`;
             
-            // Critical color warning
             if(d < 7) display.classList.add('text-red-500');
         }
 
